@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+/* Menú */
+nav {
+    background-color: #bfbfff;
+    padding: 14px;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 20px !important;
+}
+
+.fa-heart {
+    font-size: 17px;
+}
+.navbar {
+    padding: 3px 30px;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+}
+/* Enlaces del menú */
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
+}
+
+/* Cuando paso el mouse */
+a:hover {
+    color: #8f70ff;
+}
+
+.navbar .nav-link {
+     font-family: 'Poppins', sans-serif;
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #6c5ce7 !important;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+
+.seccion-proyectos {
+    padding: 80px 8%;
+    background-color: #f8f7ff;
+}
+
+.titulo-proyectos {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-proyectos span {
+    color: #8b7ed8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.titulo-proyectos h2 {
+    color: #30284d;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.titulo-proyectos p {
+    color: #77718e;
+    font-size: 15px;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.tarjeta-proyecto {
+    background: #ffffff;
+    border: 1px solid #ece7ff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 25px #8b7ed815;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #8b7ed830;
+}
+
+.icono-proyecto {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0edff;
+    border-radius: 16px;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.categoria {
+    color: #8b7ed8;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.tarjeta-proyecto h3 {
+    color: #30284d;
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.tarjeta-proyecto p {
+    color: #77718e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tecnologias span {
+    background: #f0edff;
+    color: #7566c5;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+.enlace-proyecto {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #7566c5;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.enlace-proyecto span {
+    transition: transform 0.3s ease;
+}
+
+.enlace-proyecto:hover span {
+    transform: translate(4px, -4px);
+}
+
+@media (max-width: 900px) {
+    .contenedor-proyectos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion-proyectos {
+        padding: 55px 6%;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-proyectos h2 {
+        font-size: 30px;
+    }
+}
+h1{
+    text-align: center;
+        font-family: 'Dancing Script', cursive !important;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    text-align: center;
+        font-family: 'Dancing Script', cursive !important;
+}

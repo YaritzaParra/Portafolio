@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/index.css">
+      <link rel="stylesheet" href="../js/Contacto.js">
+      <link rel="stylesheet" href="../css/Contacto.css">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="./Sobremi.html">Sobre mí</a>
+    <a href="./Habilidades.html">Habilidades</a>
+    <a href="../proyects.html">Proyectos</a>
+    <a href="./Contacto.html">Contacto</a>
+</nav>
+<section class="contacto" id="contacto">
+
+    <div class="contacto-info">
+        <span class="etiqueta">CONECTEMOS</span>
+
+        <h2>¿Creamos algo <span>increíble</span> juntos?</h2>
+
+        <p>
+            ¿Tienes una idea, un proyecto o simplemente quieres
+            saludar? Me encantaría conocerte. ¡Hablemos!
+        </p>
+
+        <div class="tarjetas-contacto">
+            <a href="https://workspace.google.com/intl/es-419/gmail/"
+               class="tarjeta-contacto">
+                <span class="icono">✉</span>
+                <span>
+                    <strong>Correo electrónico</strong>
+                    <small>Envíame un mensaje</small>
+                </span>
+                <span class="flecha">↗</span>
+            </a>
+
+            <a href="https://github.comhttps//github.com/YaritzaParra"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="tarjeta-contacto">
+                <span class="icono">⌘</span>
+                <span>
+                    <strong>GitHub</strong>
+                    <small>Conoce mis proyectos</small>
+                </span>
+                <span class="flecha">↗</span>
+            </a>
+        </div>
+    </div>
+
+    <form class="formulario-contacto" id="formContacto">
+
+        <div class="formulario-titulo">
+            <span class="punto"></span>
+            <span>Envíame un mensaje</span>
+        </div>
+
+        <div class="campo">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre"
+                   placeholder="¿Cómo te llamas?" required>
+        </div>
+
+        <div class="campo">
+            <label for="correo">Tu correo electrónico</label>
+            <input type="email" id="correo"
+                   placeholder="tu@correo.com" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Tu mensaje</label>
+            <textarea id="mensaje"
+                      placeholder="Cuéntame tu idea..."
+                      required></textarea>
+        </div>
+
+        <button type="submit" id="btnEnviar">
+            <span>Hablemos de tu proyecto</span>
+            <span class="flecha-boton">↗</span>
+        </button>
+
+        <p id="respuestaContacto" role="status"
+           aria-live="polite"></p>
+
+    </form>
+
+</section>
+</body>
+</html>
